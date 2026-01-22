@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #000;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.paper {
+  width: min(760px, 92vw);
+  border: 1px solid #9a9a9a;
+  padding: 72px 92px 64px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  margin: 0;
+  text-align: center;
+  color: #1f5da8;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.rule {
+  width: 78%;
+  height: 1px;
+  background: #bcbcbc;
+  margin: 14px auto 34px;
+}
+
+.intro {
+  margin: 0 auto 22px;
+  font-size: 18px;
+  line-height: 1.85;
+  max-width: 540px;
+}
+
+.lead {
+  margin: 10px auto 18px;
+  font-style: italic;
+  font-size: 18px;
+  max-width: 540px;
+}
+
+.goals {
+  margin: 0 auto;
+  padding-left: 22px;
+  max-width: 540px;
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.goals li {
+  margin: 0 0 18px;
+}
+
+.byu {
+  margin-top: 58px;
+  text-align: center;
+  color: #1f5da8;
+}
+
+.byu-top {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 1;
+  border-bottom: 4px solid #1f5da8;
+  padding: 0 8px 6px;
+}
+
+.byu-bottom {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  letter-spacing: 6px;
+  margin-top: 8px;
+}
