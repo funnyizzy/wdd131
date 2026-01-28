@@ -22,24 +22,37 @@ h1 {
 }
 
 .subtitle {
-  margin: 0 0 28px;
+  margin: 0 0 22px;
   font-size: 24px;
   color: #0d5ea8;
   font-weight: 500;
+}
+
+.dropdown-label {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+select {
+  font-size: 16px;
+  padding: 6px 10px;
 }
 
 .rule {
   width: 82%;
   border: none;
   border-top: 4px solid #0d5ea8;
-  margin: 0 auto 40px;
+  margin: 30px auto 40px;
 }
 
 .trifecta {
   width: min(520px, 80%);
-  height: auto;
   display: block;
   margin: 0 auto 28px;
+}
+
+#topics {
+  transition: background-color 0.3s ease;
 }
 
 #topics h2 {
