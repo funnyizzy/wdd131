@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+select {
+  padding: 8px 12px;
+  margin: 12px 0 20px;
+}
+
+#byuiLogo {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.subtitle {
+  color: #006eb6;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .subtitle {
+  color: #7cc7ff;
+}
