@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --max: 1100px;
+  --pad: 28px;
+  --orange: #d79a63;
+  --red: #b00000;
+  --text: #111;
+  --gold: #f2b400;
+  --border: #111;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.frame {
+  max-width: var(--max);
+  margin: 24px auto;
+  border: 3px solid var(--border);
+  background: #fff;
+}
+
+.site-header {
+  padding: 22px var(--pad) 0;
+}
+
+.site-title {
+  margin: 0;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.rule {
+  margin: 12px var(--pad);
+  border-top: 2px solid var(--orange);
+}
+
+.site-nav {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 36px;
+  font-size: 0.95rem;
+}
+
+.nav-links a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.page {
+  padding: 26px var(--pad);
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 28px;
+  align-items: start;
+}
+
+.meta {
+  text-align: right;
+  font-size: 0.9rem;
+  line-height: 1.9;
+  padding-top: 18px;
+}
+
+.meta-item {
+  margin: 0;
+}
+
+.stars {
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.content {
+  border-left: 2px solid var(--orange);
+  padding-left: 28px;
+  min-height: 340px;
+}
+
+.post-title {
+  margin: 0 0 14px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.book-cover {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0 auto 18px;
+}
+
+.description {
+  margin: 0;
+  max-width: 520px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.site-footer {
+  padding: 18px var(--pad) 22px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .frame {
+    margin: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 34px;
+  }
+
+  .post {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .meta {
+    padding-top: 0;
+  }
+
+  .content {
+    border-left: 0;
+    padding-left: 0;
+    min-height: auto;
+  }
+
+  .post-title {
+    text-align: left;
+    font-size: 1.35rem;
+  }
+
+  .book-cover {
+    width: 210px;
+    margin: 0 0 14px 0;
+  }
+
+  .description {
+    max-width: 420px;
+  }
+}
