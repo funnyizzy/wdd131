@@ -59,7 +59,7 @@ footer {
   margin: 0 auto;
 }
 
-#desc {
+.desc {
   margin-top: 12px;
 }
 
@@ -95,7 +95,7 @@ footer {
     grid-column: 2 / 3;
   }
 
-  #desc {
+  .desc {
     grid-column: 1 / 3;
   }
 }
