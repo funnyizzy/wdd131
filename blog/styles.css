@@ -68,6 +68,11 @@ body {
   padding: 26px var(--pad);
 }
 
+#posts {
+  display: grid;
+  gap: 40px;
+}
+
 .post {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -89,6 +94,7 @@ body {
 .stars {
   color: var(--gold);
   letter-spacing: 1px;
+  font-size: 0.95rem;
 }
 
 .content {
@@ -137,6 +143,10 @@ body {
     gap: 34px;
   }
 
+  #posts {
+    gap: 28px;
+  }
+
   .post {
     grid-template-columns: 1fr;
     row-gap: 18px;
@@ -144,6 +154,7 @@ body {
 
   .meta {
     padding-top: 0;
+    text-align: left;
   }
 
   .content {
