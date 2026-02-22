@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credit Card Form</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="form.css" />
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header><h1>Credit Card Form</h1></header>
+
+  <main>
+    <section class="errors"></section>
+
+    <form id="checkoutForm" action="#" method="get">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="email@email.com" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod" required aria-expanded="false" aria-controls="creditCardNumberContainer paypalUsernameContainer">
+        <option value="">Select Payment Method</option>
+        <option value="creditCard">Credit Card</option>
+        <option value="paypal">PayPal</option>
+      </select>
+
+      <div id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel">
+        <div class="cardStack">
+          <div class="cardFront">
+            <div class="cardTop">
+              <p class="total">TOTAL: $199</p>
+              <p class="chip">💳</p>
+            </div>
+
+            <label for="creditCardNumber" id="creditCardLabel">CARD NUMBER</label>
+            <input
+              type="text"
+              id="creditCardNumber"
+              name="creditCardNumber"
+              pattern="[0-9]{16}"
+              placeholder="1234567890123456"
+              minlength="16"
+              maxlength="16"
+              required
+            >
+
+            <label for="cardHolder">CARD HOLDER</label>
+            <input type="text" id="cardHolder" name="cardHolder" placeholder="John Doe" required>
+
+            <div id="cardExpiration">
+              <label for="expirationDate" id="expirationDate">EXPIRATION</label>
+              <div class="expRow">
+                <input
+                  type="text"
+                  id="month"
+                  name="expMonth"
+                  placeholder="MM"
+                  minlength="2"
+                  maxlength="2"
+                  pattern="(0[1-9]|1[0-2])"
+                  required
+                  aria-labelledby="expirationDate"
+                >
+                <input
+                  type="text"
+                  id="year"
+                  name="expYear"
+                  placeholder="YY"
+                  minlength="2"
+                  maxlength="2"
+                  pattern="[0-9]{2}"
+                  required
+                  aria-labelledby="expirationDate"
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="cardBack">
+            <div class="stripe"></div>
+
+            <div class="cvcArea">
+              <label for="cvc" id="cvcLabel">CVC/CVV</label>
+              <input
+                type="text"
+                id="cvc"
+                name="cvc"
+                placeholder="XXX"
+                minlength="3"
+                maxlength="3"
+                pattern="[0-9]{3}"
+                required
+                aria-labelledby="cvcLabel"
+              >
+            </div>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </div>
+
+      <p id="paypalUsernameContainer" class="hide" role="region" aria-labelledby="paypalLabel">
+        <label id="paypalLabel" for="paypalUsername">PayPal Username:</label>
+        <input type="text" id="paypalUsername" name="paypalUsername" placeholder="Enter PayPal username" required>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </main>
+</body>
+</html>

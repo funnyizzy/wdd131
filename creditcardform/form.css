@@ -1,0 +1,106 @@
+body {
+  font-size: 1.2em;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+h1, h2 {
+  text-align: center;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.errors {
+  white-space: pre-line;
+  color: red;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.hide {
+  display: none;
+}
+
+.cardStack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.cardFront,
+.cardBack {
+  border-radius: 14px;
+  background: #d9d9d9;
+  padding: 16px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.18);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.chip {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.expRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.stripe {
+  height: 50px;
+  background: #111;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.cvcArea {
+  width: 50%;
+  margin-left: auto;
+}
+
+.cvcArea input {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  form {
+    width: 90%;
+  }
+}
