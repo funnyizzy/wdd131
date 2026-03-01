@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Card</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Character Card">
+  <meta property="og:description" content="A JavaScript character card using objects and methods.">
+  <meta property="og:url" content="https://funnyizzy.github.io/wdd131/charactercard">
+  <meta property="og:image" content="https://funnyizzy.github.io/wdd131/charactercard/images/snortleblat.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Character Card">
+  <meta name="twitter:description" content="A JavaScript character card using objects and methods.">
+  <meta name="twitter:image" content="https://funnyizzy.github.io/wdd131/charactercard/images/snortleblat.webp">
+
+  <link rel="icon" type="image/png" href="images/gamepad.png">
+  <link rel="apple-touch-icon" href="images/gamepad.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="character.js" defer></script>
+</head>
+
+<body>
+
+  <div class="card">
+    <img class="image" src="images/snortleblat.webp" alt="Snortleblat">
+
+    <div class="name" id="name"></div>
+
+    <div class="stats">
+      <p>Class: <span id="class"></span></p>
+      <p>Level: <span id="level"></span></p>
+      <p>Health: <span id="health"></span></p>
+    </div>
+
+    <div class="buttons">
+      <button id="attack">Attack</button>
+      <button id="levelUp">Level Up</button>
+    </div>
+  </div>
+
+</body>
+</html>
