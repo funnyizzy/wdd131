@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f3f3;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  width: min(82%, 1020px);
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 26px;
+  margin-bottom: 18px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.logo-title img {
+  width: 74px;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  border: 2px solid #222;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px 14px;
+  font-size: 1rem;
+}
+
+.search button {
+  width: 54px;
+  border: none;
+  border-left: 2px solid #222;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.search img {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 2px solid #222;
+  border-radius: 8px;
+  background: #fff;
+  padding: 14px;
+}
+
+.recipe img {
+  width: 100%;
+  display: block;
+}
+
+.recipe-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.tag {
+  margin: 0;
+  padding: 5px 9px;
+  border: 1px solid #999;
+  background: #efefef;
+  font-size: 0.95rem;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #2c8df5;
+  line-height: 1;
+}
+
+.rating {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.description {
+  display: none;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  max-width: 430px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer a {
+  font-size: 0.85rem;
+}
+
+.social {
+  display: flex;
+  gap: 6px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.social img {
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+
+/* larger device */
+@media (min-width: 700px) {
+  header {
+    padding-top: 24px;
+    margin-bottom: 20px;
+  }
+
+  .logo-title img {
+    width: 92px;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  .search input {
+    padding: 13px 14px;
+    font-size: 1rem;
+  }
+
+  .search button {
+    width: 58px;
+  }
+
+  .recipe {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .recipe img {
+    width: 46%;
+    max-width: 360px;
+  }
+
+  .recipe-info {
+    flex: 1;
+    padding-top: 0;
+    gap: 12px;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+    margin-top: 6px;
+  }
+
+  .description {
+    display: block;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 16px;
+  }
+}
+
+/* smaller device */
+@media (max-width: 699px) {
+  header,
+  main,
+  footer {
+    width: min(78%, 290px);
+  }
+
+  header {
+    padding-top: 36px;
+    margin-bottom: 16px;
+  }
+
+  .logo-title {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .logo-title img {
+    width: 68px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .search {
+    border-radius: 6px;
+  }
+
+  .search input {
+    padding: 10px 10px;
+    font-size: 0.95rem;
+  }
+
+  .search button {
+    width: 40px;
+  }
+
+  .search img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .recipe {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .tag {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .rating {
+    font-size: 1rem;
+  }
+
+  .social a {
+    width: 24px;
+    height: 24px;
+  }
+
+  .social img {
+    width: 14px;
+    height: 14px;
+  }
+
+  footer a {
+    font-size: 0.68rem;
+  }
+}
