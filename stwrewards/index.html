@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>STW Daily | Home</title>
+  <meta name="description" content="Check daily llamas and Save the World mission rewards in one simple place." >
+  <link rel="icon" href="images/llama-banner.svg" type="image/svg+xml" >
+  <link rel="stylesheet" href="styles/style.css" >
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="Logo.png" alt="STW Daily llama logo" class="logo-img" >
+      <span>STW Daily</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="missions.html">Missions</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Fortnite Save the World</p>
+        <h1>Daily llamas and mission rewards made simple</h1>
+        <p>
+          STW Daily helps players quickly check the most important daily information in Fortnite Save the World.
+          Instead of searching through multiple pages, players can open this site and immediately see featured llamas,
+          useful missions, and reward types worth farming.
+        </p>
+        <p>
+          This site is designed for both newer players who are learning what rewards matter and experienced players who
+          want a faster way to decide what missions are worth doing each day.
+        </p>
+        <div class="hero-buttons">
+          <a href="missions.html" class="button">View Missions</a>
+          <a href="about.html" class="button button-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-image-card">
+        <img src="images/llama-banner.svg" alt="Stylized Fortnite-inspired llama illustration" class="hero-image" >
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <h2>Featured Daily Llamas</h2>
+        <p>These are the llamas currently highlighted on the home page.</p>
+      </div>
+      <div id="featured-llamas" class="card-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <h2>Featured Mission Rewards</h2>
+        <p>
+          These featured missions show rewards that many Save the World players often look for, such as V-Bucks,
+          legendary survivors, perk materials, and evolution resources.
+        </p>
+      </div>
+      <div id="featured-missions" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>STW Daily is a student project inspired by Fortnite Save the World daily information tools.</p>
+  </footer>
+</body>
+</html>
