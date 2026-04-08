@@ -3,70 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STW Daily | Missions</title>
-  <meta name="description" content="Browse Fortnite Save the World daily mission rewards.">
+  <title>STW Daily Missions</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
   <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="index.html">STW Daily</a>
-
-    <nav class="site-nav" aria-label="Main navigation">
+  <header>
+    <h1>STW Daily</h1>
+    <nav>
       <a href="index.html">Home</a>
-      <a href="missions.html" class="active">Missions</a>
+      <a href="missions.html">Missions</a>
       <a href="about.html">About</a>
     </nav>
   </header>
 
-  <main class="missions-page">
-    <section class="page-top">
-      <h1>Daily Missions</h1>
-      <p>
-        Check mission rewards by zone and quickly see what is worth doing today.
-      </p>
-    </section>
+  <main>
+    <h2>Mission Rewards</h2>
+    <p>
+      This page shows daily Save the World missions. Use the filters to quickly find rewards by zone or reward type.
+    </p>
 
-    <section class="mission-controls">
-      <label for="reward-filter">Reward Type</label>
-      <select id="reward-filter">
-        <option value="all">All Rewards</option>
-        <option value="V-Bucks">V-Bucks</option>
-        <option value="Legendary Survivor">Legendary Survivor</option>
-        <option value="Epic Survivor">Epic Survivor</option>
-        <option value="Pure Drop of Rain">Pure Drop of Rain</option>
-        <option value="Lightning in a Bottle">Lightning in a Bottle</option>
-        <option value="Drops of Rain">Drops of Rain</option>
-        <option value="Epic PERK-UP">Epic PERK-UP</option>
-      </select>
+    <div class="filters">
+      <div>
+        <label for="zone-filter">Zone</label>
+        <select id="zone-filter">
+          <option value="all">All</option>
+          <option value="Stonewood">Stonewood</option>
+          <option value="Plankerton">Plankerton</option>
+          <option value="Canny Valley">Canny Valley</option>
+          <option value="Twine Peaks">Twine Peaks</option>
+          <option value="Ventures">Ventures</option>
+        </select>
+      </div>
 
-      <label for="zone-filter">Zone</label>
-      <select id="zone-filter">
-        <option value="all">All Zones</option>
-        <option value="Stonewood">Stonewood</option>
-        <option value="Plankerton">Plankerton</option>
-        <option value="Canny Valley">Canny Valley</option>
-        <option value="Twine Peaks">Twine Peaks</option>
-        <option value="Ventures">Ventures</option>
-      </select>
+      <div>
+        <label for="reward-filter">Reward</label>
+        <select id="reward-filter">
+          <option value="all">All</option>
+          <option value="V-Bucks">V-Bucks</option>
+          <option value="Legendary Survivor">Legendary Survivor</option>
+          <option value="Epic Survivor">Epic Survivor</option>
+          <option value="Pure Drop of Rain">Pure Drop of Rain</option>
+          <option value="Drops of Rain">Drops of Rain</option>
+          <option value="Lightning in a Bottle">Lightning in a Bottle</option>
+          <option value="Eye of the Storm">Eye of the Storm</option>
+          <option value="Storm Shard">Storm Shard</option>
+          <option value="Legendary PERK-UP">Legendary PERK-UP</option>
+          <option value="Epic PERK-UP">Epic PERK-UP</option>
+          <option value="Re-PERK">Re-PERK</option>
+        </select>
+      </div>
+    </div>
 
-      <label for="sort-filter">Sort</label>
-      <select id="sort-filter">
-        <option value="zone">Zone</option>
-        <option value="reward">Reward</option>
-        <option value="amount">Amount</option>
-      </select>
-
-      <button id="reset-button" type="button">Reset</button>
-    </section>
-
-    <p id="results-text" class="results-text"></p>
-
-    <section id="missions-container" class="missions-container"></section>
+    <div id="mission-list" class="card-list"></div>
   </main>
 
-  <footer class="site-footer">
-    <p>STW Daily is a student project inspired by Fortnite Save the World mission trackers.</p>
+  <footer>
+    <p>Fan-made student project about Fortnite Save the World.</p>
   </footer>
 </body>
 </html>

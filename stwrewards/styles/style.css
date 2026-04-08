@@ -1,181 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #1b1b2f;
+  background: #10131a;
   color: white;
+  line-height: 1.5;
 }
 
-a {
+header, footer {
+  background: #1b2230;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+}
+
+nav a {
   color: white;
   text-decoration: none;
+  margin-right: 15px;
 }
 
-.site-header {
-  background-color: #162447;
-  padding: 15px;
+main {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.logo {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  width: 200px;
   display: block;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  margin: 20px auto;
 }
 
-.site-nav a {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 8px 12px;
-  background-color: #1f4068;
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.site-nav a.active {
-  background-color: #e43f5a;
-}
-
-.missions-page {
-  padding: 15px;
-}
-
-.page-top h1 {
-  margin-top: 0;
-}
-
-.mission-controls {
-  background-color: #162447;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.mission-controls label {
+.filters label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
-.mission-controls select,
-.mission-controls button {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 10px;
+select {
   padding: 8px;
-  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
 }
 
-.mission-controls button {
-  background-color: #e43f5a;
-  color: white;
-  border: none;
+.card-list {
+  display: grid;
+  gap: 15px;
 }
 
-.results-text {
-  margin-bottom: 15px;
+.zone-section {
+  margin-bottom: 25px;
 }
 
-.zone-group {
-  margin-bottom: 20px;
-  border: 1px solid black;
+.zone-title {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
 }
 
-.zone-header {
-  padding: 10px;
-  font-weight: bold;
+.stonewood {
+  color: #7CFC90;
 }
 
-.zone-stonewood .zone-header {
-  background-color: #6b4f2a;
+.plankerton {
+  color: #fff4a3;
 }
 
-.zone-plankerton .zone-header {
-  background-color: #6a2c70;
+.canny-valley {
+  color: #ffd84d;
 }
 
-.zone-canny .zone-header {
-  background-color: #1f6f8b;
+.twine-peaks {
+  color: orange;
 }
 
-.zone-twine .zone-header {
-  background-color: #355c4d;
+.ventures {
+  color: #8fdcff;
 }
 
-.zone-ventures .zone-header {
-  background-color: #3a506b;
-}
-
-.zone-list {
-  background-color: #1f4068;
-}
-
-.mission-row {
-  border-top: 1px solid black;
-  padding: 10px;
-}
-
-.mission-row:first-child {
-  border-top: none;
-}
-
-.mission-main h3 {
-  margin: 0 0 5px 0;
-  font-size: 18px;
-}
-
-.mission-main p {
-  margin: 0 0 8px 0;
-  font-size: 14px;
-}
-
-.reward-side {
-  margin-top: 5px;
-}
-
-.badge {
-  display: inline-block;
-  padding: 4px 8px;
-  margin-right: 6px;
-  margin-top: 4px;
-  background-color: #e43f5a;
-  font-size: 14px;
-}
-
-.badge.amount {
-  background-color: #1b1b2f;
-  border: 1px solid white;
-}
-
-.badge.special {
-  background-color: gold;
-  color: black;
-}
-
-.empty-state {
-  background-color: #162447;
+.card {
+  background: #1f2937;
   padding: 15px;
-  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
 
-.site-footer {
-  background-color: #162447;
-  padding: 15px;
-  text-align: center;
-  margin-top: 20px;
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 6px 0;
 }
 
 @media (min-width: 700px) {
-  .mission-controls {
-    max-width: 500px;
+  .filters {
+    flex-direction: row;
+    gap: 20px;
   }
 
-  .mission-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+  .zone-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
-  .reward-side {
-    margin-top: 0;
-    text-align: right;
+  .card {
+    margin-bottom: 0;
   }
 }
