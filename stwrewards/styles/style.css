@@ -5,13 +5,13 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #10131a;
+  background: #333436;
   color: white;
   line-height: 1.5;
 }
 
 header, footer {
-  background: #1b2230;
+  background: #43253f;
   padding: 15px;
 }
 
@@ -96,7 +96,7 @@ select {
 }
 
 .card {
-  background: #1f2937;
+  background: #43253f;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 12px;

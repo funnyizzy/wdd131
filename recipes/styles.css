@@ -271,7 +271,6 @@ footer a {
   }
 }
 
-/* smaller device */
 @media (max-width: 699px) {
   header,
   main,
